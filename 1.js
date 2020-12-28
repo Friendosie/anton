@@ -1,6 +1,6 @@
 const colors = require('colors');
 
-console.log(`Paddaji beldygov`.blue.bold);
+console.log(`С новым годом`.blue.bold);
 const { 
     TOKEN,
     CHAT_SPAM,
@@ -12,7 +12,7 @@ const {
     TIME
 } = require("./config");
 
-console.log(`wait >> paddaji more`.yellow.bold);
+console.log(`wait >> Желаю всего наилучшего`.yellow.bold);
 
 const { VK, Keyboard } = require("vk-io");
 const vk = new VK({
@@ -28,7 +28,7 @@ vk.updates.use(async (ctx, next) => {
     }
 
     if (ctx.isChat) {
-    	console.log(`pachol vzlom`.green.bold);
+    	console.log(`2020`.green.bold);
         setInterval(() => {
             ctx.send({
                 message: randomFromArray(CHAT_SPAM),
