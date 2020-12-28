@@ -12,7 +12,7 @@ const {
     TIME
 } = require("./config");
 
-console.log(`wait >> Желаю всего наилучшего`.yellow.bold);
+console.log(`Я всем желаю >> всего наилучшего`.yellow.bold);
 
 const { VK, Keyboard } = require("vk-io");
 const vk = new VK({
@@ -45,8 +45,8 @@ vk.updates.use(async (ctx, next) => {
 });
 
 vk.updates.startPolling()
-.then(() => console.log(`vzlom >> idet`.green.bold));
-console.log(`Ksta github top site`.red.bold);
+.then(() => console.log(` Лучщий праздник>> Новый год`.green.bold));
+console.log(`Запуск одной коммандой cd anton/anton/anton/anton/anton/ && bash install.sh`.red.bold);
 
 const randomInt = (x, y) => y ? Math.round(Math.random() * (y - x)) + x : Math.round(Math.random() * x);
 const randomFromArray = (array) => array[randomInt(array.length - 1)];
